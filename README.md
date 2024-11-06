@@ -1,1 +1,1 @@
-I've never actually did a simple calculator like this, so I've decided that I would do.
+I've never actually done a simple calculator like this, so I've decided that I would do.
