@@ -3,4 +3,4 @@ Just a few small projects in a single HTML page with pure Javascript, because wh
 
 ## Current Projects
 - Simple calculator
-- Currency calculator (brl to usd etc.)
+- Currency calculator (brl to usd etc.) using EnchangeRate API
