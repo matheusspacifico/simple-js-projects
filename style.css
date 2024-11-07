@@ -14,6 +14,12 @@ body {
     background-color: #f0f2f5;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
 .calculator-container {
     width: 320px;
 }
@@ -83,4 +89,73 @@ body {
 
 .key#ac:hover {
     background-color: #d30808;
+}
+
+.currency-proj-container {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+
+.currency-proj-container label {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 500;
+}
+
+.currency-proj-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.currency-proj-container input[type="number"]::placeholder {
+    color: #aaa;
+}
+
+.from-to-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.from-to-box select {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.currency-proj-container button {
+    background-color: #3b99fc;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.currency-proj-container button:hover {
+    background-color: #338ad8;
+}
+
+.currency-proj-container p#exit {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 15px;
+    text-align: center;
 }

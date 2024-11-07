@@ -8,34 +8,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="calculator-container">
-        <div class="display-screen" id="display-screen"></div>
+    <main>
+        <section class="calculator-container">
+            <div class="display-screen" id="display-screen"></div>
 
-        <div class="keys-field">
-            <div class="key" id="7">7</div>
-            <div class="key" id="8">8</div>
-            <div class="key" id="9">9</div>
-            <div class="key operator" id="add">+</div>
-        
-            <div class="key" id="4">4</div>
-            <div class="key" id="5">5</div>
-            <div class="key" id="6">6</div>
-            <div class="key operator" id="subtract">-</div>
+            <div class="keys-field">
+                <div class="key" id="7">7</div>
+                <div class="key" id="8">8</div>
+                <div class="key" id="9">9</div>
+                <div class="key operator" id="add">+</div>
+            
+                <div class="key" id="4">4</div>
+                <div class="key" id="5">5</div>
+                <div class="key" id="6">6</div>
+                <div class="key operator" id="subtract">-</div>
 
-            <div class="key" id="1">1</div>
-            <div class="key" id="2">2</div>
-            <div class="key" id="3">3</div>
-            <div class="key operator" id="multiply">*</div>
+                <div class="key" id="1">1</div>
+                <div class="key" id="2">2</div>
+                <div class="key" id="3">3</div>
+                <div class="key operator" id="multiply">*</div>
 
-            <div class="key" id="0">0</div>
+                
+                <div class="key" id="ac">AC</div>
+                <div class="key" id="0">0</div>
+                <div class="key" id="decimal">.</div>
+                <div class="key operator" id="divide">/</div>
 
-            <div class="key" id="decimal">.</div>
-            <div class="key" id="ac">AC</div>    
-            <div class="key operator" id="divide">/</div>
+                <div class="key" id="calculate">=</div>
+            </div>
+        </section>
 
-            <div class="key" id="calculate">=</div>
-        </div>
+        <section class="currency-proj-container">
+
+            <label for="entry">Value to be converted:</label>
+            <input type="number" id="entry" name="entry" placeholder="0"/>
+
+            <div class="from-to-box">
+                <select id="from" autocomplete="off">
+                    <option value="BRL" selected>BRL</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                </select>
+                <p>to</p>
+                <select id="to" autocomplete="off">
+                    <option value="BRL">BRL</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP" selected>GBP</option>
+                </select>
+            </div>
+
+            <button id="exchange">Exchange</button>
+            <p id="exit"></p>
+
+        </section>
     </main>
-    <script src="script.js"></script>
+    <script src="calculator.js" type="module"></script>
+    <script src="currency.js" type="module"></script>
 </body>
 </html>
