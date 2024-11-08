@@ -28,7 +28,7 @@ exchange.addEventListener("click", () => {
     .then(res => {
         for (const curr in res.conversion_rates){
             if (curr == toCurr) {
-                outValue = res.conversion_rates[curr];
+                outValue = entryValue * res.conversion_rates[curr];
             }
         }
 
