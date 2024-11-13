@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" href="data:image">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
         <section class="calculator-container">
@@ -17,7 +19,7 @@
                 <div class="key" id="8">8</div>
                 <div class="key" id="9">9</div>
                 <div class="key operator" id="add">+</div>
-            
+
                 <div class="key" id="4">4</div>
                 <div class="key" id="5">5</div>
                 <div class="key" id="6">6</div>
@@ -28,7 +30,7 @@
                 <div class="key" id="3">3</div>
                 <div class="key operator" id="multiply">*</div>
 
-                
+
                 <div class="key" id="ac">AC</div>
                 <div class="key" id="0">0</div>
                 <div class="key" id="decimal">.</div>
@@ -41,7 +43,7 @@
         <section class="currency-proj-container">
 
             <label for="entry">Value to be converted:</label>
-            <input type="number" id="entry" name="entry" placeholder="0"/>
+            <input type="number" id="entry" name="entry" placeholder="0" />
 
             <div class="from-to-box">
                 <select id="from" autocomplete="off">
@@ -63,8 +65,49 @@
             <p id="exit"></p>
 
         </section>
+
+        <section class="tip-calculator-container" id="tipCont">
+            <h1>Quick Tip</h1>
+            <section>
+                <div class="bill">
+                    <label for="yourBill">Bill</label>
+                    <input type="number" placeholder="Your bill" id="yourBill" />
+                </div>
+                <div>
+                    <div class="space-between">
+                        <label for="">Select tip</label><span id="tipPercent">0%</span>
+                    </div>
+                    <input type="range" value="0" id="tipInput" class="range" />
+                </div>
+                <div class="space-between">
+                    <span>Tip</span>
+                    <span id="tipValue"></span>
+                </div>
+                <hr />
+                <div class="space-between total">
+                    <span>Total</span>
+                    <span id="totalWithTip"></span>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <div class="space-between">
+                        <label for="splitInput">Split</label>
+                        <span id="splitValue">1</span>
+                    </div>
+                    <input type="range" min="1" max="10" value="1" id="splitInput" class="range" />
+                </div>
+                <div class="space-between">
+                    <span>Bill each</span>
+                    <span id="billEach"></span>
+                </div>
+            </section>
+        </section>
     </main>
     <script src="calculator.js" type="module"></script>
     <script src="currency.js" type="module"></script>
+    <script src="tip.js" type="module"></script>
 </body>
+
 </html>

@@ -11,7 +11,8 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    background-color: #f0f2f5;
+    background-color: #121212;
+    color: #f0f2f5;
 }
 
 main {
@@ -24,13 +25,12 @@ main {
     width: 320px;
 }
 
-
 .display-screen {
     width: 100%;
     padding: 20px;
     font-size: 2em;
-    background-color: #222;
-    color: #fff;
+    background-color: #333;
+    color: #f0f2f5;
     text-align: right;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -53,7 +53,8 @@ main {
     justify-content: center;
     font-size: 1.5em;
     padding: 20px;
-    background-color: #e0e0e0;
+    background-color: #424242;
+    color: #f0f2f5;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s ease;
@@ -61,34 +62,34 @@ main {
 
 .key.operator {
     background-color: #ff9f43;
-    color: #fff;
+    color: #ffffff;
 }
 
 .key#calculate {
-    background-color: #2ecb2c;
-    color: #fff;
+    background-color: #4caf50;
+    color: #ffffff;
     grid-column: span 4;
 }
 
 .key#ac {
-    background-color: #ff4242;
-    color: #fff;
+    background-color: #e57373;
+    color: #ffffff;
 }
 
 .key:hover {
-    background-color: #d1d1d1;
+    background-color: #616161;
 }
 
 .key.operator:hover {
-    background-color: #ff7f27;
+    background-color: #ff7043;
 }
 
 .key#calculate:hover {
-    background-color: #00ae26;
+    background-color: #388e3c;
 }
 
 .key#ac:hover {
-    background-color: #d30808;
+    background-color: #d32f2f;
 }
 
 .currency-proj-container {
@@ -96,17 +97,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f9f9f9;
+    background-color: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     gap: 15px;
 }
 
 .currency-proj-container label {
     font-size: 1.2em;
-    color: #333;
-    font-weight: 500;
+    color: #f0f2f5;
 }
 
 .currency-proj-container input[type="number"] {
@@ -114,7 +114,9 @@ main {
     padding: 10px;
     font-size: 1em;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #f0f2f5;
     margin-bottom: 10px;
 }
 
@@ -131,15 +133,15 @@ main {
 .from-to-box select {
     padding: 8px;
     font-size: 1em;
-    border: 1px solid #ddd;
+    border: 1px solid #555;
     border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
+    background-color: #333;
+    color: #f0f2f5;
 }
 
 .currency-proj-container button {
-    background-color: #3b99fc;
-    color: #fff;
+    background-color: #42a5f5;
+    color: #f0f2f5;
     border: none;
     padding: 12px 20px;
     font-size: 1em;
@@ -150,12 +152,105 @@ main {
 }
 
 .currency-proj-container button:hover {
-    background-color: #338ad8;
+    background-color: #1e88e5;
 }
 
 .currency-proj-container p#exit {
     font-size: 1.2em;
-    color: #333;
+    color: #f0f2f5;
     margin-top: 15px;
     text-align: center;
+}
+
+.tip-calculator-container {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tip-calculator-container h1 {
+    font-size: 1.8em;
+    color: #f0f2f5;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.tip-calculator-container input[type="number"],
+.tip-calculator-container input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #333;
+    color: #f0f2f5;
+}
+
+.tip-calculator-container label {
+    font-size: 1em;
+    color: #f0f2f5;
+}
+
+.tip-calculator-container .space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip-calculator-container .total {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.tip-calculator-container #tipValue,
+.tip-calculator-container #totalWithTip,
+.tip-calculator-container #billEach {
+    font-size: 1.2em;
+    color: #66bb6a;
+}
+
+.tip-calculator-container .range {
+    accent-color: #ff7043;
+}
+
+.tip-calculator-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #66bb6a;
+    color: #f0f2f5;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 15px;
+}
+
+.tip-calculator-container button:hover {
+    background-color: #43a047;
+}
+
+.tip-calculator-container hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .calculator-container,
+    .tip-calculator-container,
+    .currency-proj-container {
+        width: 90%;
+    }
 }
