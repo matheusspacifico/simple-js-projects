@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <main>
+    <div class="big-sections">
         <section class="calculator-container">
             <div class="display-screen" id="display-screen"></div>
 
@@ -41,18 +41,20 @@
         </section>
 
         <section class="currency-proj-container">
+            <h1>Currency Converter</h1>
 
             <label for="entry">Value to be converted:</label>
             <input type="number" id="entry" name="entry" placeholder="0" />
 
             <div class="from-to-box">
+                <label for="from">From:</label>
                 <select id="from" autocomplete="off">
                     <option value="BRL" selected>BRL</option>
                     <option value="EUR">EUR</option>
                     <option value="USD">USD</option>
                     <option value="GBP">GBP</option>
                 </select>
-                <p>to</p>
+                <label for="to">To:</label>
                 <select id="to" autocomplete="off">
                     <option value="BRL">BRL</option>
                     <option value="EUR">EUR</option>
@@ -104,10 +106,20 @@
                 </div>
             </section>
         </section>
-    </main>
+    </div>
+
+    <div class="big-sections">
+        <section class="random-color-container" id="random-color-container">
+            <h1>Random Color Picker</h1>
+            <p>Current color: <span id="color-name-span"></span></p>
+            <button id="change-color-button">Change</button>
+        </section>
+    </div>
+
     <script src="calculator.js" type="module"></script>
     <script src="currency.js" type="module"></script>
     <script src="tip.js" type="module"></script>
+    <script src="randomcolor.js" type="module"></script>
 </body>
 
 </html>

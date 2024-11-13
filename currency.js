@@ -32,7 +32,7 @@ exchange.addEventListener("click", () => {
             }
         }
 
-        exit.innerText = outValue;
+        exit.innerText = outValue.toFixed(2);
         // console.log(outValue);
     })
     .catch(e => console.error(e.message));
